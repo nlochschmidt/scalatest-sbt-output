@@ -1,6 +1,8 @@
 scalaVersion in ThisBuild := "2.11.2"
 
-testOptions in Test := Seq(Tests.Argument("-oC"))
+testOptions in Test in ThisBuild := Seq(Tests.Argument("-oIC"))
+
+parallelExecution in Test in ThisBuild := false
 
 lazy val dependencies = Seq(
   "org.scalatest" %% "scalatest" % "2.2.1")

@@ -21,7 +21,6 @@ import tags.CPU
 class SetSpec extends Spec {
 
   @CPU def `an empty Set should have size 0` {
-  	Thread.sleep(2000)
     assert(Set.empty.size === 0)
   }
 
