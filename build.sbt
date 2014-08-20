@@ -2,8 +2,6 @@ scalaVersion in ThisBuild := "2.11.2"
 
 testOptions in Test in ThisBuild := Seq(Tests.Argument("-oINCXHELPOQRM"))
 
-parallelExecution in Test in ThisBuild := false
-
 lazy val dependencies = Seq(
   "org.scalatest" %% "scalatest" % "2.2.2")
 
